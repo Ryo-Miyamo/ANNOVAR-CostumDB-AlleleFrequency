@@ -23,7 +23,7 @@ Convert ToMMo VCF files to the ANNOVAR database format, including insertions and
 ### Note
 1. This process will take approximately 2 hours on an Intel® Core™ i9-10980XE CPU @ 3.00GHz × 36.
 
-2. For exome analysis pipelines, using a VCF file focused on the target region will help save processing time.
+2. Restricting the input VCF file to the target region (e.g., for exome analysis) can significantly reduce the analysis time with this tool.
 
 3. Usage example in ANNOVAR:
 
