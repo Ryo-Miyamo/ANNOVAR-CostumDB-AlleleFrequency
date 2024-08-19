@@ -34,7 +34,7 @@ Convert ToMMo VCF files (allele frequency data of the Japanese from jMorp: https
 
 3. Usage example in ANNOVAR:
 
-   -protocol refGeneWithVer,54KJPN_v20230626r3,gnomad41_exome \
+   *-protocol refGeneWithVer,54KJPN_v20230626r3,gnomad41_exome \*
 
-   -operation gx,f,f
+   *-operation gx,f,f*
 
