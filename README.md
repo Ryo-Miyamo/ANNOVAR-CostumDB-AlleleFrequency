@@ -10,9 +10,9 @@ Convert ToMMo VCF files (allele frequency data of the Japanese from jMorp: https
 ## Scripts Included
 1. `ToMMoVCFtoAnnovarDB_main.sh` – The main script.
 
-2. `ToMMo_indel_converter_DEL.py` – Subscript for converting deletions.
+2. `ToMMo_indel_converter_DEL.py` – Sub-script for converting deletions.
 
-3. `ToMMo_indel_converter_INS.py` – Subscript for converting insertions.
+3. `ToMMo_indel_converter_INS.py` – Sub-script for converting insertions.
 
 
 ## Quick Usage Guide
