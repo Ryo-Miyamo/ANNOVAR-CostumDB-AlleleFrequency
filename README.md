@@ -1,5 +1,5 @@
 # ToMMoVCF-AnnovarDB-Converter
-Convert ToMMo VCF files (allele frequency data of the Japanese: https://jmorp.megabank.tohoku.ac.jp/) to the ANNOVAR database format, including insertions and deletions.
+Convert ToMMo VCF files (allele frequency data of the Japanese: `jMorp`, https://jmorp.megabank.tohoku.ac.jp/) to the ANNOVAR database format, including insertions and deletions.
 
 
 ## Prerequisites
@@ -18,7 +18,7 @@ Convert ToMMo VCF files (allele frequency data of the Japanese: https://jmorp.me
 ## Quick Usage Guide
 1. Clone the repository.
 
-2. Place the ToMMo `.vcf` or `.vcf.gz` file(s), with or without index files, in the `data` directory.
+2. Place the ToMMo `.vcf` or `.vcf.gz` file(s), with or without index files, in the `data` directory. (As an example, place the `tommo-54kjpn-20230626r3-GRCh38-af-autosome.vcf.gz` and `tommo-54kjpn-20230626r3-GRCh38-af-chrX_PAR2.vcf.gz` files, along with their index files, into the data directory from the jMorp download site. Please be aware of the duplication between the PAR2 and PAR3 files. As of 2024/08/18.)
  
 3. Edit the main script to update the `Paths Configuration` and, if necessary, specify the column name for ToMMo AF to be included in the ANNOVAR result file.
 
