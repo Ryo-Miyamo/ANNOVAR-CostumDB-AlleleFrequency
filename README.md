@@ -1,5 +1,5 @@
 # ToMMoVCF-AnnovarDB-Converter
-Convert ToMMo VCF files to the ANNOVAR database format, including insertions and deletions.
+Convert ToMMo VCF files (allele frequency data of the Japanese: https://jmorp.megabank.tohoku.ac.jp/) to the ANNOVAR database format, including insertions and deletions.
 
 
 ## Prerequisites
