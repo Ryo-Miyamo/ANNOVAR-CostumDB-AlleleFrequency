@@ -72,9 +72,6 @@ echo "Concatenating query_result.txt files into query_combined_result.txt..."
 cat "${Tmp_Dir}"*query_result.txt > "${Tmp_Dir}query_combined_result.txt"
 echo "Concatenation complete. All files combined into query_combined_result.txt."
 
-cat "${Tmp_Dir}"*query_result.txt > "${Tmp_Dir}query_combined_result.txt"
-
-echo "All query_result.txt files have been combined into combined_query_result.txt"
 
 # Remove individual query_result.txt files
 rm "${Tmp_Dir}"*query_result.txt
