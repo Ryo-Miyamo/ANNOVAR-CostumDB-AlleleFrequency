@@ -13,7 +13,7 @@ Convert ToMMo VCF Files to ANNOVAR Database Format
  
 4. Update the Paths Configuration and specify the column name for ToMMo AF that will appear in the ANNOVAR result file.
 
-5. Run the conversion script (ToMMoVCFtoAnnovarDB_main.sh)
+5. Run the main conversion script (ToMMoVCFtoAnnovarDB_main.sh).
 
 
 ### Note
