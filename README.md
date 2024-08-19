@@ -20,9 +20,9 @@ Convert ToMMo VCF files (allele frequency data of the Japanese: https://jmorp.me
 
 2. Place the ToMMo `.vcf` or `.vcf.gz` file(s), with or without index files, in the `data` directory.
  
-3. Edit the main conversion shell script to update the `Paths Configuration` and, if necessary, specify the column name for ToMMo AF to be included in the ANNOVAR result file.
+3. Edit the main script to update the `Paths Configuration` and, if necessary, specify the column name for ToMMo AF to be included in the ANNOVAR result file.
 
-4. Run the main conversion shell script.
+4. Run the main script.
 
 5. The final output file will be generated in the result directory.
 
