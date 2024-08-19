@@ -3,6 +3,7 @@ Convert ToMMo VCF Files to ANNOVAR Database Format
 
 # Prerequisites
 bcftools
+
 convert2annovar.pl
 
 # Quick Usage Guide
