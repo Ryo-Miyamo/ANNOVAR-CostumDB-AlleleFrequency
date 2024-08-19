@@ -1,5 +1,5 @@
 # ToMMoVCF-AnnovarDB-Converter
-Convert ToMMo VCF Files to ANNOVAR Database Format
+Convert ToMMo VCF files to the ANNOVAR database format, including insertions and deletions.
 
 
 ## Prerequisites
