@@ -9,14 +9,21 @@ Convert ToMMo VCF Files to ANNOVAR Database Format
 ## Quick Usage Guide
 1. Clone the repository.
 
-3. Place the ToMMo .vcf or .vcf.gz file(s), with or without index files, in the data directory.
+2. Place the ToMMo `.vcf` or `.vcf.gz` file(s), with or without index files, in the `data` directory.
  
-4. Update the Paths Configuration and specify the column name for ToMMo AF that will appear in the ANNOVAR result file.
+3. Edit the main conversion shell script to update the `Paths Configuration` and, if necessary, specify the column name for ToMMo AF to be included in the ANNOVAR result file.
 
-5. Run the main conversion script (ToMMoVCFtoAnnovarDB_main.sh).
+4. Run the main conversion shell script.
 
 
 ### Note
 1. This process will take approximately 2 hours on an Intel® Core™ i9-10980XE CPU @ 3.00GHz × 36.
 
-3. For exome analysis pipelines, using a VCF file focused on the target region will help save processing time.
+2. For exome analysis pipelines, using a VCF file focused on the target region will help save processing time.
+
+3. Usage example in ANNOVAR:
+
+   -protocol refGeneWithVer,54KJPN_v20230626r3,gnomad41_exome \
+
+   -operation gx,f,f
+
