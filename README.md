@@ -7,6 +7,13 @@ Convert ToMMo VCF files to the ANNOVAR database format, including insertions and
 
 2. convert2annovar.pl
 
+## Scripts Included
+1. ToMMoVCFtoAnnovarDB_main.sh – The main script.
+
+2. ToMMo_indel_converter_DEL.py – Subscript for converting deletions.
+
+3. ToMMo_indel_converter_INS.py – Subscript for converting insertions.
+
 
 ## Quick Usage Guide
 1. Clone the repository.
