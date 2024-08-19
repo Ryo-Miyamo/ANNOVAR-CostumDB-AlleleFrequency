@@ -1,4 +1,4 @@
-# ANNOVAR-CostumDB-AlleleFrequency
+# VCF-ANNOVARdb-Converter
 Convert VCF files with allele frequency data to the ANNOVAR database format. This tool is primarily designed for ToMMo VCF files (allele frequency data from the Japanese population provided by jMorp: https://jmorp.megabank.tohoku.ac.jp/), but it can also handle other VCF files, though compatibility may vary.
 
 
