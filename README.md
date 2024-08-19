@@ -30,7 +30,7 @@ Convert ToMMo VCF files (allele frequency data of the Japanese from jMorp: https
 ### Note
 1. The processing time took 2 hours on a machine with an Intel® Core™ i9-10980XE CPU @ 3.00GHz × 36.
 
-2. Restricting the input VCF file to the target region (e.g., for exome analysis) can significantly reduce the processing time with this tool.
+2. For exome analysis, consider using a target region VCF from the original VCF, as it can significantly speed up processing with this tool.
 
 3. Usage example in ANNOVAR:
 
