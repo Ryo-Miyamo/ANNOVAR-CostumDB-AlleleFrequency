@@ -1,3 +1,5 @@
+sorry now updating...
+
 # VCF-ANNOVARdb-Converter
 Convert VCF files with allele frequency (AF) data to the ANNOVAR database format. This tool is primarily designed for ToMMo VCF files (allele frequency data from the Japanese population provided by jMorp: https://jmorp.megabank.tohoku.ac.jp/), but it supports other VCF files (e.g., VCFs from gnomAD), though compatibility may vary.
 
