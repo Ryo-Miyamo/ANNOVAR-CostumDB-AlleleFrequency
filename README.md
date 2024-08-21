@@ -10,11 +10,11 @@ Convert VCF files with allele frequency (AF) data to the ANNOVAR database format
 2. convert2annovar.pl
 
 ## Scripts Included
-1. `ToMMoVCFtoAnnovarDB_main.sh` – The main script.
+1. `VCFtoAnnovarDB_main.sh` – The main script.
 
-2. `ToMMo_indel_converter_DEL.py` – Sub-script for converting deletions.
+2. `VCFtoAnnovarDB_indel_converter_DEL.py` – Sub-script for converting deletions.
 
-3. `ToMMo_indel_converter_INS.py` – Sub-script for converting insertions.
+3. `VCFtoAnnovarDB_indel_converter_INS.py` – Sub-script for converting insertions.
 
 
 ## Quick Usage Guide
