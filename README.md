@@ -37,7 +37,7 @@ Convert VCF files with allele frequency (AF) data to the ANNOVAR database format
 ### Note
 1. Processing a total of 46 GB of input .vcf.gz files took 2 hours on a machine with an Intel® Core™ i9-10980XE CPU @ 3.00GHz × 36.
 
-2. For exome analysis, consider using a target region VCF from the original VCF, as it can significantly speed up processing with this tool.
+2. For exome analysis, using a target region VCF significantly save time.
 
 3. This tool processes all VCF files in the data directory, so ensure that only the VCF files you want to process are placed there.
 
