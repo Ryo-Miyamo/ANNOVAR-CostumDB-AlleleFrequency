@@ -18,7 +18,7 @@ Convert VCF files with allele frequency data to the ANNOVAR database format. Thi
 ## Quick Usage Guide
 1. Clone the repository.
 
-2. Place your `.vcf` or `.vcf.gz` file(s), with or without index files, in the `data` directory. (For instance, place the *tommo-54kjpn-20230626r3-GRCh38-af-autosome.vcf.gz* and *tommo-54kjpn-20230626r3-GRCh38-af-chrX_PAR2.vcf.gz* files, along with their index files, into the data directory. Please be aware of the duplication between the PAR2 and PAR3 files.)
+2. Place your `.vcf`, `.vcf.gz`, or `.vcf.bgz` file(s), with or without index files, in the `data` directory. (For instance, place the *tommo-54kjpn-20230626r3-GRCh38-af-autosome.vcf.gz* and *tommo-54kjpn-20230626r3-GRCh38-af-chrX_PAR2.vcf.gz* files, along with their index files, into the data directory. Please be aware of the duplication between the PAR2 and PAR3 files.)
  
 3. Edit the main script to update the `Paths Configuration` and, if necessary, specify the column name for ToMMo AF to be included in the ANNOVAR result file.
 
