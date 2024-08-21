@@ -32,9 +32,11 @@ Convert VCF files with allele frequency (AF) data to the ANNOVAR database format
 
 2. For exome analysis, consider using a target region VCF from the original VCF, as it can significantly speed up processing with this tool.
 
-3. Usage example in ANNOVAR:
+3. This tool processes all VCF files in the data directory, so ensure that only the VCF files you want to process are placed there.
 
-   -protocol refGeneWithVer,*54KJPN_v20230626r3*,gnomad41_exome
+4. Usage example in ANNOVAR:
 
-   -operation gx,f,f
+   -protocol refGeneWithVer,`54KJPN_v20230626r3`,gnomad41_exome
+
+   -operation gx,`f`,f
 
