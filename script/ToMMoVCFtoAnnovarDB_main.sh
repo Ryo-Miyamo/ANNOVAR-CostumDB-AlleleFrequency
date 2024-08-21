@@ -52,14 +52,20 @@ mkdir -p "$Output_Dir"
 # Process each .vcf and .vcf.gz file in the Input_Dir
 # For each file, run `bcftools query` to extract fields and save results to Tmp_Dir
 echo "Executing bcftools query to extract relevant fields..."
-for file in "${Input_Dir}"*.vcf "${Input_Dir}"*.vcf.gz; do
-    # Ensure that the file exists and has a .vcf or .vcf.gz extension
-    if [[ -f "$file" && ( "$file" == *.vcf || "$file" == *.vcf.gz ) ]]; then
+for file in "${Input_Dir}"*.vcf "${Input_Dir}"*.vcf.gz "${Input_Dir}"*.vcf.bgz; do
+    # Ensure that the file exists and has a supported extension
+    if [[ -f "$file" ]]; then
         filename=$(basename "$file")
         output_file="${Tmp_Dir}${filename%.*}_query_result.txt"
 
-        # Run bcftools query command
-        bcftools query -f '%CHROM\t%POS\t%REF\t%ALT\t%AF\n' "$file" > "$output_file"
+        # Determine if the file is compressed or not
+        if [[ "$file" == *.vcf.gz || "$file" == *.vcf.bgz ]]; then
+            # Use bcftools view to handle compressed files
+            bcftools view "$file" | bcftools query -f '%CHROM\t%POS\t%REF\t%ALT\t%AF\n' > "$output_file"
+        else
+            # Directly process uncompressed files
+            bcftools query -f '%CHROM\t%POS\t%REF\t%ALT\t%AF\n' "$file" > "$output_file"
+        fi
 
         # Print status message
         echo "Processed $file -> $output_file"
@@ -71,7 +77,6 @@ echo "Field extraction with bcftools query completed."
 echo "Concatenating query_result.txt files into query_combined_result.txt..."
 cat "${Tmp_Dir}"*query_result.txt > "${Tmp_Dir}query_combined_result.txt"
 echo "Concatenation complete. All files combined into query_combined_result.txt."
-
 
 # Remove individual query_result.txt files
 rm "${Tmp_Dir}"*query_result.txt
