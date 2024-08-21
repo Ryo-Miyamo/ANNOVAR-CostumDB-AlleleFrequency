@@ -1,0 +1,1 @@
+This tool processes all VCF files in the data directory, so ensure that only the VCF files you want to process are placed here.
