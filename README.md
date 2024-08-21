@@ -16,15 +16,23 @@ Convert VCF files with allele frequency (AF) data to the ANNOVAR database format
 
 3. `VCFtoAnnovarDB_indel_converter_INS.py` – Sub-script for converting insertions.
 
+Processing Flow
+1. Run bcftools query to extract fields from the VCF file.
+2. Convert the data to one variant per line.
+3. Split the file based on the comparison of REF and ALT lengths:
+ REF > ALT: deletion.txt
+ REF < ALT: insertion.txt
+ REF = ALT: others.txt
+4. Convert to ANNOVAR database format using the .py scripts for deletion.txt and insertion.txt, and convert2annovar.pl for others.txt.
 
 ## Quick Usage Guide
 1. Clone the repository.
 
 2. Place your `.vcf`, `.vcf.gz`, or `.vcf.bgz` file(s), with or without index files, in the `data` directory. (For instance, place the *tommo-54kjpn-20230626r3-GRCh38-af-autosome.vcf.gz* and *tommo-54kjpn-20230626r3-GRCh38-af-chrX_PAR2.vcf.gz* files, along with their index files, into the data directory. Please be aware of the duplication between the PAR2 and PAR3 files.)
  
-3. Edit the main script to update the `Paths Configuration` and, if necessary, specify the column name for ToMMo AF to be included in the final output file.
+3. Edit the main script to update the `Paths Configuration` and, if necessary, specify the column name to be included in the final output file.
 
-4. Run the main script.
+4. Assign execution permissions to the main script and run the script.
 
 5. The final output file will be generated in the result directory.
 
