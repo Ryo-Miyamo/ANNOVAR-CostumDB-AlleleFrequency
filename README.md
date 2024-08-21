@@ -16,13 +16,10 @@ Convert VCF files with allele frequency (AF) data to the ANNOVAR database format
 
 3. `VCFtoAnnovarDB_indel_converter_INS.py` – Sub-script for converting insertions.
 
-Processing Flow
-1. Run bcftools query to extract fields from the VCF file.
+# Processing Flow
+1. Extract fields from the VCF file by bcftools query.
 2. Convert the data to one variant per line.
-3. Split the file based on the comparison of REF and ALT lengths:
- REF > ALT: deletion.txt
- REF < ALT: insertion.txt
- REF = ALT: others.txt
+3. Split the file based on the comparison of REF and ALT lengths: REF > ALT: deletion.txt, REF < ALT: insertion.txt, REF = ALT: others.txt
 4. Convert to ANNOVAR database format using the .py scripts for deletion.txt and insertion.txt, and convert2annovar.pl for others.txt.
 
 ## Quick Usage Guide
