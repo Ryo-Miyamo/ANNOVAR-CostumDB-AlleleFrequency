@@ -19,15 +19,15 @@ Convert VCF files with allele frequency (AF) data to the ANNOVAR database format
 #### Processing Flow
 1. Extract fields from the VCF file by bcftools query.
 2. Convert the data to one variant per line.
-3. Split the file based on the comparison of REF and ALT lengths: REF > ALT: deletion.txt, REF < ALT: insertion.txt, REF = ALT: others.txt
-4. Convert to ANNOVAR database format using the .py scripts for deletion.txt and insertion.txt, and convert2annovar.pl for others.txt.
+3. Split the file based on the comparison of REF and ALT lengths: REF > ALT: _deletion.txt, REF < ALT: _insertion.txt, REF = ALT: _others.txt
+4. Convert to ANNOVAR database format using the .py scripts for _deletion.txt and _insertion.txt, and convert2annovar.pl for _others.txt.
 
 ## Quick Usage Guide
 1. Clone the repository.
 
 2. Place your `.vcf`, `.vcf.gz`, or `.vcf.bgz` file(s), with or without index files, in the `data` directory. (For instance, place the *tommo-54kjpn-20230626r3-GRCh38-af-autosome.vcf.gz* and *tommo-54kjpn-20230626r3-GRCh38-af-chrX_PAR2.vcf.gz* files, along with their index files, into the data directory. Please be aware of the duplication between the PAR2 and PAR3 files.)
  
-3. Edit the main script to update the `Paths Configuration` and, if necessary, specify the column name to be included in the final output file.
+3. Edit the main script to update the `Paths Configuration` and, if necessary, specify the column name (`colname_ANN`) to be included in the final output file.
 
 4. Assign execution permissions to the main script and run the script.
 
@@ -47,5 +47,5 @@ Convert VCF files with allele frequency (AF) data to the ANNOVAR database format
 
    -operation gx,`f`,f
 
-   (The protocol name corresponds to the `colname_ANN` in the main script.)
+   (The protocol name corresponds to the `colname_ANN` in the main script. The value of `colname_ANN` is also reflected in the name of the final output file.)
 
