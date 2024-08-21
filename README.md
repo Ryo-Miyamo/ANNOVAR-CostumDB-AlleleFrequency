@@ -27,7 +27,7 @@ Convert VCF files with allele frequency (AF) data to the ANNOVAR database format
 
 2. Place your `.vcf`, `.vcf.gz`, or `.vcf.bgz` file(s), with or without index files, in the `data` directory. (For instance, place the *tommo-54kjpn-20230626r3-GRCh38-af-autosome.vcf.gz* and *tommo-54kjpn-20230626r3-GRCh38-af-chrX_PAR2.vcf.gz* files, along with their index files, into the data directory. Please be aware of the duplication between the PAR2 and PAR3 files.)
  
-3. Edit the main script to update the `Paths Configuration` and, if necessary, specify the column name (`colname_ANN`) to be included in the final output file.
+3. Edit the main script to update the `Paths Configuration` and, if necessary, specify the column name (`colname_ANN`) to be included in the final output file. The value of `colname_ANN` is reflected in the name of the final output file.
 
 4. Assign execution permissions to the main script and run the script.
 
@@ -47,5 +47,5 @@ Convert VCF files with allele frequency (AF) data to the ANNOVAR database format
 
    -operation gx,`f`,f
 
-   (The protocol name corresponds to the `colname_ANN` in the main script. The value of `colname_ANN` is also reflected in the name of the final output file.)
+   (The protocol name corresponds to the `colname_ANN` in the main script.)
 
