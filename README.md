@@ -40,3 +40,5 @@ Convert VCF files with allele frequency (AF) data to the ANNOVAR database format
 
    -operation gx,`f`,f
 
+   (The protocol name corresponds to the `colname_ANN` in the main script.)
+
